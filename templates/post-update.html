@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Обновление итема
+{% endblock %}
+
+{% block body %}
+
+<div class="container mt-5">
+    <h1>Изменить данные</h1>
+    <form method="post">
+        <input type="text" name="info" id="info" class="form-control" placeholder="Инфо" value=" {{item.info}}"><br>
+        <input type="text" name="invnum" id="invnum" class="form-control" placeholder="Инвентарный номер" value=" {{item.invnm}}"><br>
+        <input type="text" name="comment" id="comment" class="form-control" placeholder="Коммент" value=" {{item.comment}}"><br>
+        <input type="submit" class="btn btn-success" value="Обновить">
+    </form>
+</div>
+{% endblock %}
+
